@@ -16,7 +16,7 @@ export default function Header() {
         className={style.image}
       >
           <p className='text-[18px] mb-[-23px]'>NEW TREND {date}</p><br />
-          <h2 className='font-serif text-[42px] tracking-widest'>Meggie <span className='text-green-500'>Appeal</span></h2>
+          <h2 className='font-serif text-[42px] tracking-widest'>Meg <span className='text-green-500'>Appeal</span></h2>
           <button className='bg-white px-10 py-3 mt-3 rounded-sm font-medium text-[14px] hover:bg-black hover:text-gray-100 duration-500 ease-in-out'>SHOP NOW</button>
       </motion.div>
         </div>
