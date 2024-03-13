@@ -66,7 +66,7 @@ export const file = [
         'image' : '/Bignative3.png',
         'price' : '70,000',
         'name' : 'Stunning Blue Nigerian Bridal Dress',
-        'preAmount' : '75,500',
+        'preAmount' : '75,400',
         'discount' : 3,
     },
     {
