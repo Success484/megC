@@ -15,8 +15,8 @@ const handLinkClose = () => {
 }
   return (
     <div>
-    <div onClick={handleClick} className='cursor-pointer'>
-        {Change ? <GrClose size={25} /> : <RxHamburgerMenu size={25}/> }
+    <div onClick={handleClick} className='cursor-pointer '>
+        {Change ? <GrClose color='black' size={25} /> : <RxHamburgerMenu color='black' size={25}/> }
     </div>
     <div className={Change ? 'mt-3 z-10 fixed left-0 w-[50%] h-screen bg-[#ecf0f3] p-10 ease-in sm:hidden duration-500 rounded-sm' : 'z-10 fixed w-[65%] h-screen bg-[#ecf0f3] p-10 rounded-sm ease-in duration-500 left-[-100%]'}>
     {navigation.map((link, index) => (

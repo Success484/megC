@@ -41,7 +41,7 @@ export default function Navbar() {
           </ul>
         </div>
 
-        <div className='block md:hidden sm:hidden'>
+        <div className='block md:hidden sm:hidden text-black'>
           <Hamburber />
         </div>
       </div>
