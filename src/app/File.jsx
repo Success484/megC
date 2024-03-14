@@ -27,24 +27,24 @@ export const file = [
     {
         'image': '/simple1.png',
         'price': '16,000',
-        'name': 'Men White Jogger',
+        'name': 'Beautiful Light Green Gown',
         'preAmount': '20,000',
         'discount': 4,
     },
     {
         'image': '/simple2.png',
         'price': '17,000',
-        'name': 'Men White Jogger',
+        'name': 'Beautiful Ladies Gown',
     },
     {
         'image': '/simple3.png',
         'price': '17,500',
-        'name': 'Men White Jogger',
+        'name': 'Hot Ladies Gown',
     },
     {
         'image': '/simple4.png',
         'price': '20,500',
-        'name': 'Men White Jogger',
+        'name': 'Hot Red Ladies Gown',
         'preAmount': '23,500',
         'discount': 3,
     },
@@ -79,24 +79,24 @@ export const file = [
     {
         'image': '/men_wear1.png',
         'price': '20,500',
-        'name': 'Men White Jogger',
+        'name': 'Complete Native For Men',
     },
     {
         'image': '/men_wear2.png',
         'price': '20,500',
-        'name': 'Men White Jogger',
+        'name': 'Complete Native Dress For Men',
         'preAmount': '23,500',
         'discount': 3,
     },
     {
         'image': '/men_wear3.png',
         'price': '20,500',
-        'name': 'Men White Jogger',
+        'name': 'Full Complete for men',
     },
     {
         'image': '/men_wear4.png',
         'price': '20,500',
-        'name': 'Men White Jogger',
+        'name': 'Nice Button Shirt',
     },
     {
         'image': '/Hoodie1.png',

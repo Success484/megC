@@ -3,6 +3,7 @@ import { file } from './File'
 import Image from 'next/image'
 import style from './style/style.module.css'
 import StarsRate from './Star'
+import Link from 'next/link'
 
 export default function Display() {
     const display = file.map((file, index) => (
@@ -10,7 +11,9 @@ export default function Display() {
             <div>
             <div className={`hover:bg-pink-200 ease-in-out duration-500 rounded-md bg-gray-200 relative`}>
                 <div className={`flex justify-center items-center`}>
+                <Link href={`details/${file.name.split(' ').join('').toLocaleLowerCase()}`}>
                 <Image src={file.image} height={300} width={300} quality={100} className={`p-5 ${index == 8 || index == 9 || index == 10 || index == 11 ? style.larger_image:''} ${style.display_image}`} alt='' />
+                </Link>
                 </div>
                 <div className='text-[14px]'>
                     <div className='absolute top-0 left-0 bg-green-700 px-2.5 mt-5 ml-4'><h2 className='text-white font-medium'>New</h2></div>
@@ -19,10 +22,10 @@ export default function Display() {
                     )}
                 </div>
             </div>
-            <div className='mt-2.5'>
+            <div className='mt-2.5 space-y-2.5 pt-2'>
                 <p className='text-[14px] font-medium text-gray-600'>{file.name}</p>
                 <StarsRate />
-                <div className='flex space-x-2 mb-3'>
+                <div className='flex space-x-2 mb-3 pb-8'>
                     <p className='font-bold text-gray-700 text-[15px]'>&#8358;{file.price}</p>
                     {file.preAmount && (
                     <p className='text-gray-500 text-[15px] line-through'>&#8358;{file.preAmount}</p>

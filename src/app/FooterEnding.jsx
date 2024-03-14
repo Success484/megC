@@ -25,7 +25,7 @@ export default function FooterEnding() {
         <div>
           <div>
             <h2 className='px-5'>
-              Meg Appareal is the home of modern fashion. Contact us with any design
+              Meg Apparel is the home of modern fashion. Contact us with any design
               and we provide. Feel free to explore!
             </h2>
           </div>

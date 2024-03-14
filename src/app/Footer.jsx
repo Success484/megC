@@ -2,11 +2,15 @@ import React from 'react';
 import { MdOutlineDoubleArrow } from "react-icons/md";
 import Link from 'next/link';
 import FooterEnding from './FooterEnding';
+import Logo from './Logo';
 
 
 export default function Footer() {
     return (
         <div className='bg-green-700 pt-8 text-white'>
+            <div>
+                <Logo />
+            </div>
             <div className='flex justify-center items-center'>
                 <div className='grid grid-cols-2 md:grid-cols-3 lg:gap-[250px] md:gap-[100px] gap-[100px] p-4'>
                     <div>
