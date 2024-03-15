@@ -97,6 +97,7 @@ export const file = [
         'image': '/men_wear4.png',
         'price': '20,500',
         'name': 'Nice Button Shirt',
+        
     },
     {
         'image': '/Hoodie1.png',
@@ -114,6 +115,8 @@ export const file = [
         'name': 'Cool White Hoodie',
         'preAmount': '23,500',
         'discount': 2,
+        'description': "Discover timeless elegance with our pure white hood. Crafted for comfort and style, it's perfect for any occasion. Effortlessly versatile, pair it with any outfit. Elevate your look with this essential wardrobe piece.",
+        'category': 'clothing',
     },
     {
         'image': '/Hoodie4.png',
@@ -121,6 +124,7 @@ export const file = [
         'name': 'Purple Beautiful Hoodie',
         'preAmount': '23,500',
         'discount': 2,
+        
     },
 
 ]

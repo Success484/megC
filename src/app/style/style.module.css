@@ -36,3 +36,7 @@
     object-fit: contain;
 }
 
+.detailPageImage {
+    width: 500vh;
+    height: 500vh;
+}
