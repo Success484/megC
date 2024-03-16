@@ -9,13 +9,13 @@ export default function page({ params }) {
   return (
     <div className='bg-white pb-10'>
       <div className='mb-6 pt-8 '>
-        <div className='bg-gray-100 h-[50px] w-full text-center flex items-center md:px-28 px-8'>
+        <div className='bg-gray-100 h-[50px] w-full text-center flex items-center md:px-28 px-4'>
           <div className='flex md:space-x-6 space-x-1 text-gray-600'>
             <h2 className='text-[16px] font-semibold'><Link href={'/'}>Home </Link></h2>
             <span>/</span>
             <h2 className='text-[16px] font-semibold'><Link href={'/'}>Clothing </Link></h2>
             <span>/</span>
-            <h2 className='text-red-500 text-[16px] font-semibold'>{detailproduct.name}</h2>
+            <h2 className='text-red-500 text-[16px] font-semibold '>{detailproduct.name}</h2>
           </div>
         </div>
       </div>
