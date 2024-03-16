@@ -9,7 +9,7 @@ export default function page({ params }) {
   return (
     <div className='bg-white pb-10'>
       <div className='mb-6 pt-8 '>
-        <div className='bg-gray-100 h-[50px] w-full text-center flex items-center px-28'>
+        <div className='bg-gray-100 h-[50px] w-full text-center flex items-center md:px-28 px-10'>
           <div className='flex space-x-6 text-gray-600'>
             <h2 className='text-[16px] font-semibold'><Link href={'/'}>Home </Link></h2>
             <span>/</span>
@@ -19,7 +19,7 @@ export default function page({ params }) {
           </div>
         </div>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 justify-center px-28 bg-white  space-x-4'>
+      <div className='grid grid-cols-1 md:grid-cols-2 justify-center md:px-28 px-10 bg-white  space-x-4'>
         <div className='bg-gray-100 flex justify-center items-center'>
           <Image src={detailproduct.image} quality={100} height={1300} width={1300} className='globals_image'/>
         </div>
