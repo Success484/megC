@@ -10,7 +10,7 @@ export default function page({ params }) {
     <div className='bg-white pb-10'>
       <div className='mb-6 pt-8 '>
         <div className='bg-gray-100 h-[50px] w-full text-center flex items-center md:px-28 px-10'>
-          <div className='flex space-x-6 text-gray-600'>
+          <div className='flex md:space-x-6 space-x-1 text-gray-600'>
             <h2 className='text-[16px] font-semibold'><Link href={'/'}>Home </Link></h2>
             <span>/</span>
             <h2 className='text-[16px] font-semibold'><Link href={'/'}>Clothing </Link></h2>
