@@ -6,11 +6,11 @@ export default function Logo() {
   return (
     <div className='mb-4 flex justify-center items-center px-2.5'>
         <div className='bg-gray-100 h-[90px] flex justify-center items-center rounded-md'>
-            <div className='relative left-9'>
+            <div className='relative left-10'>
             <StarsRate />
             </div>
             <Image src={'/MEGLOGO.png'} quality={100} height={300} width={300} alt='Logo' className='relative bottom-0'/>
-            <div className='relative right-9'>
+            <div className='relative right-10'>
             <StarsRate />
             </div>
         </div>

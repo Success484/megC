@@ -11,29 +11,34 @@ export default function page({ params }) {
         <div className='bg-gray-100 h-[50px] w-full text-center flex items-center px-28'>
           <div className='flex space-x-6 text-gray-600'>
             <h2 className='text-[16px] font-semibold'>Home</h2>
+            <span>/</span>
             <h2 className='text-[16px] font-semibold'>Clothing</h2>
+            <span>/</span>
             <h2 className='text-red-500 text-[16px] font-semibold'>{detailproduct.name}</h2>
           </div>
         </div>
       </div>
-      <div className='flex justify-center bg-white px-28 space-x-4'>
-        <div className='bg-gray-100'>
-          <Image src={detailproduct.image} quality={100} height={300} width={529} />
+      <div className='grid grid-cols-1 md:grid-cols-2 justify-center px-28 bg-white  space-x-4'>
+        <div className='bg-gray-100 flex justify-center items-center'>
+          <Image src={detailproduct.image} quality={100} height={1300} width={1300} className='globals_image'/>
         </div>
 
         <div>
-          <h2 className='font-bold text-[23px]'>{detailproduct.name}</h2>
+          <h2 className='font-bold text-[23px] md:mt-0 mt-5'>{detailproduct.name}</h2>
           <div className='my-4'>
             <StarsRate />
           </div>
           <div className='flex space-x-3'>
             <h2 className='font-bold text-gray-700 text-[17px]'>&#8358;{detailproduct.price} </h2>
+            { detailproduct.preAmount && (
             <span className='text-gray-500 text-[17px] line-through'>&#8358;{detailproduct.preAmount}</span>
+            )
+            }
           </div>
 
           <div className='w-full h-0.5 bg-gray-200 my-8'></div>
 
-          <div className='w-[600px] '>
+          <div className='pr-5'>
             <h2 className='text-wrap text-gray-700'>{detailproduct.description}</h2>
           </div>
 

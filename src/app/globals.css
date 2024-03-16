@@ -16,7 +16,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -30,4 +30,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+.globals_image {
+  height: 400px;
+  width: 350px;
+  object-fit: contain;
 }
