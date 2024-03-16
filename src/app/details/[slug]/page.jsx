@@ -1,6 +1,7 @@
 import { file } from '@/app/File'
 import StarsRate from '@/app/Star'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function page({ params }) {
@@ -10,9 +11,9 @@ export default function page({ params }) {
       <div className='mb-6 pt-8 '>
         <div className='bg-gray-100 h-[50px] w-full text-center flex items-center px-28'>
           <div className='flex space-x-6 text-gray-600'>
-            <h2 className='text-[16px] font-semibold'>Home</h2>
+            <h2 className='text-[16px] font-semibold'><Link href={'/'}>Home </Link></h2>
             <span>/</span>
-            <h2 className='text-[16px] font-semibold'>Clothing</h2>
+            <h2 className='text-[16px] font-semibold'><Link href={'/'}>Clothing </Link></h2>
             <span>/</span>
             <h2 className='text-red-500 text-[16px] font-semibold'>{detailproduct.name}</h2>
           </div>
