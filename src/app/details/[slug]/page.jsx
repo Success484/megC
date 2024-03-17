@@ -15,14 +15,15 @@ export default function page({ params }) {
 
     // Message to be sent
     const message = `I am interested in your product: ${detailproduct.name}. 
-    You can view the product image here: ${detailproduct.image}`;
-    
+    You can view the product image name here: ${detailproduct.image}`;
+
     // Construct the WhatsApp URL
     const whatsappUrl = `whatsapp://send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
 
     // Open WhatsApp application
     window.location.href = whatsappUrl;
-  };
+};
+
   return (
     <div>
     <div className='bg-white pb-10'>
