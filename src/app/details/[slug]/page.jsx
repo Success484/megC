@@ -14,8 +14,7 @@ export default function page({ params }) {
     const phoneNumber = '+2347081887562'; // Replace with your phone number
 
     // Message to be sent
-    const message = `I am interested in your product: ${detailproduct.name}. 
-    You can view the product image name here: ${detailproduct.image}`;
+    const message = `I am interested in your product: ${detailproduct.name}.`;
 
     // Construct the WhatsApp URL
     const whatsappUrl = `whatsapp://send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;

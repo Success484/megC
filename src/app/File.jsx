@@ -19,7 +19,7 @@ export const file = [
     {
         'image': '/cottonPpant3.png',
         'price': '14,000',
-        'name': 'Ladie Brown Pant',
+        'name': 'Ladies Brown Pant',
         'category': 'clothing',
         'description': "Elevate your style with our brown lady pants, crafted for both comfort and elegance. Featuring two functional pockets, they're perfect for any occasion, adding practicality to your wardrobe"
     },
