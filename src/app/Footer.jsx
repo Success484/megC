@@ -5,6 +5,7 @@ import FooterEnding from './FooterEnding';
 import Logo from './Logo';
 
 
+
 export default function Footer() {
     return (
         <div className='bg-green-700 pt-8 text-white'>

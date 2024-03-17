@@ -1,4 +1,5 @@
 import { file } from '@/app/File'
+import Related from '@/app/Related'
 import StarsRate from '@/app/Star'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -53,6 +54,7 @@ export default function page({ params }) {
         </div>
 
       </div>
+      <Related />
     </div>
   )
 }
