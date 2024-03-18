@@ -32,8 +32,14 @@
   }
 } */
 
+.globals_images {
+  height: 260px;
+  width: 260px;
+  object-fit: contain;
+}
+
 .globals_image {
   height: 400px;
-  width: 350px;
+  width: 400px;
   object-fit: contain;
 }

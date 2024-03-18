@@ -117,6 +117,18 @@ export const file = [
         'description': "Elevate your style with our complete native dress for men. Crafted for comfort and elegance, it offers a perfect blend of traditional and contemporary fashion. Whether for formal events or casual outings, this attire is sure to make a statement.",
     },
     {
+        'image': '/Greenhoodie.png',
+        'price': '20,000',
+        'name': 'Green Beautiful Hoodie',
+        'preAmount': '23,500',
+        'discount': 2,
+        'category': 'clothing',
+        'class': 'hoodie',
+        'description': "Elevate your casual style with our stunning purple hoodie. Crafted with soft, high-quality fabric, this hoodie offers both comfort and fashion. Perfect for layering or wearing on its own, it adds a touch of elegance to any outfit. Stay cozy and chic with this must-have wardrobe essential.",
+
+        
+    },
+    {
         'image': '/men_wear3.png',
         'price': '20,500',
         'name': 'Full Complete for men',
@@ -139,9 +151,22 @@ export const file = [
         'description': "Elevate your style with our trendy ladies' gown featuring a chic hoodie. Crafted for both comfort and fashion, it's the perfect blend of style and functionality. Make a statement with this versatile piece, perfect for any casual outing or cozy day indoors.",
     },
     {
+        'image': '/Redhoodie.png',
+        'price': '20,000',
+        'name': 'Red Beautiful Hoodie',
+        'preAmount': '23,500',
+        'discount': 2,
+        'category': 'clothing',
+        'class': 'hoodie',
+        'description': "Elevate your casual style with our stunning purple hoodie. Crafted with soft, high-quality fabric, this hoodie offers both comfort and fashion. Perfect for layering or wearing on its own, it adds a touch of elegance to any outfit. Stay cozy and chic with this must-have wardrobe essential.",
+
+        
+    },
+    {
         'image': '/Hoodie2.png',
         'price': '35,500',
         'name': 'Pink Complete Hoodie',
+        'class': 'hoodie',
         'category': 'clothing',
         'description': "Stay cozy and stylish with our pink complete hoodie set. Designed for maximum comfort, this set features a hoodie, sweatpants, and a matching top. Whether you're lounging at home or running errands, this ensemble adds a pop of color to your wardrobe while keeping you comfortable all day long.",
     },
@@ -153,6 +178,7 @@ export const file = [
         'discount': 2,
         'description': "Discover timeless elegance with our pure white hood. Crafted for comfort and style, it's perfect for any occasion. Effortlessly versatile, pair it with any outfit. Elevate your look with this essential wardrobe piece.",
         'category': 'clothing',
+        'class': 'hoodie',
     },
     {
         'image': '/Hoodie4.png',
@@ -161,6 +187,7 @@ export const file = [
         'preAmount': '23,500',
         'discount': 2,
         'category': 'clothing',
+        'class': 'hoodie',
         'description': "Elevate your casual style with our stunning purple hoodie. Crafted with soft, high-quality fabric, this hoodie offers both comfort and fashion. Perfect for layering or wearing on its own, it adds a touch of elegance to any outfit. Stay cozy and chic with this must-have wardrobe essential.",
 
         
