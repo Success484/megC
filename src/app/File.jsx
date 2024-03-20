@@ -220,7 +220,7 @@ export const file = [
     {
         'image': '/shirt4.png',
         'price': '20,500',
-        'name': 'Nice Button Shirt',
+        'name': 'Soft Button Shirt',
         'category': 'clothing',
         'class': "shirt",
         'description': "Step up your fashion game with ourshirt for men. Designed with style and comfort in mind, it's perfect for any occasion. With attention to detail and quality craftsmanship, this ensemble is a wardrobe essential for the modern man.",
@@ -229,7 +229,7 @@ export const file = [
     {
         'image': '/shirt3.png',
         'price': '20,500',
-        'name': 'Nice Button Shirt',
+        'name': 'White And Green Button Shirt',
         'category': 'clothing',
         'class': "shirt",
         'description': "Step up your fashion game with our shirt for men. Designed with style and comfort in mind, it's perfect for any occasion. With attention to detail and quality craftsmanship, this ensemble is a wardrobe essential for the modern man.",
@@ -237,7 +237,7 @@ export const file = [
     {
         'image': '/shirt2.png',
         'price': '20,500',
-        'name': 'Nice Button Shirt',
+        'name': 'Gray White Shirt',
         'class': "shirt",
         'category': 'clothing',
         'description': "Step up your fashion game with our shirt for men. Designed with style and comfort in mind, it's perfect for any occasion. With attention to detail and quality craftsmanship, this ensemble is a wardrobe essential for the modern man.",
@@ -248,7 +248,7 @@ export const file = [
         'price': '21,500',
         'preAmount': '23,500',
         'discount': 2,
-        'name': 'Nice Button Shirt',
+        'name': 'Green Button Shirt',
         'class': "shirt",
         'category': 'clothing',
         'description': "Step up your fashion game with our shirt for men. Designed with style and comfort in mind, it's perfect for any occasion. With attention to detail and quality craftsmanship, this ensemble is a wardrobe essential for the modern man.",

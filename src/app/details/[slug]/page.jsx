@@ -89,6 +89,10 @@ export default function Page({ params }) {
       {detailProduct.class === 'complete_men' &&(
         <ProductRelated currentProductName={detailProduct.name} currentProductClasses={['complete_men']} />
       )}
+
+      {detailProduct.class === 'shirt' &&(
+        <ProductRelated currentProductName={detailProduct.name} currentProductClasses={['shirt']} />
+      )}
       </div>
       
   )
