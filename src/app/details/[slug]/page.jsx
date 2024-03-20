@@ -66,33 +66,12 @@ export default function Page({ params }) {
       </div>
       
       {/* Render hoodie products */}
-      {detailProduct.class === 'hoodie' &&(
-        <ProductRelated currentProductName={detailProduct.name} currentProductClasses={['hoodie']} />
-      )}
-
-      {detailProduct.class === 'gown' &&(
-        <ProductRelated currentProductName={detailProduct.name} currentProductClasses={['gown']} />
-      )}
-
-      {detailProduct.class === 'brida_dress' &&(
-        <ProductRelated currentProductName={detailProduct.name} currentProductClasses={['brida_dress']} />
-      )}
-
-      {detailProduct.class === 'lady_joggers' &&(
-        <ProductRelated currentProductName={detailProduct.name} currentProductClasses={['lady_joggers']} />
-      )}
-
-      {detailProduct.class === 'men_joggers' &&(
-        <ProductRelated currentProductName={detailProduct.name} currentProductClasses={['men_joggers']} />
-      )}
-      
-      {detailProduct.class === 'complete_men' &&(
-        <ProductRelated currentProductName={detailProduct.name} currentProductClasses={['complete_men']} />
-      )}
-
-      {detailProduct.class === 'shirt' &&(
-        <ProductRelated currentProductName={detailProduct.name} currentProductClasses={['shirt']} />
-      )}
+      {detailProduct.class && (
+  <ProductRelated
+    currentProductName={detailProduct.name}
+    currentProductClasses={[detailProduct.class]}
+  />
+)}
       </div>
       
   )
