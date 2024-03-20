@@ -22,9 +22,7 @@ export default function Related() {
 
     return (
         <div>
-            <div className='md:px-28 px-4 relative top-8'>
-            <TitleRelated />
-            </div>
+            
             <div className='flex items-center pb-20 py-[50px] md:px-28 px-4'>
             <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mx-2 gap-5'>
                 {randomProducts.map((product, index) => (

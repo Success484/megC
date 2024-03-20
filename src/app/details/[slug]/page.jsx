@@ -9,9 +9,6 @@ import React from 'react'
 export default function Page({ params }) {
   const detailProduct = file.find(detail => detail.name.split(' ').join('').toLocaleLowerCase() === params.slug);
 
-  const hoodieProducts = file.filter(product => product.class === 'hoodie');
-  const currentProductClass = 'hoodie';
-
   const openWhatsApp = () => {
     const phoneNumber = '+2347081887562';
     const message = `I am interested in your product: ${detailProduct.name}.`;
@@ -34,7 +31,7 @@ export default function Page({ params }) {
           </div>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 justify-center md:px-28 px-10 bg-white  space-x-4'>
-          <div className='bg-gray-100 flex justify-center items-center'>
+          <div className='bg-gray-100 flex justify-center items-center rounded-md'>
             <Image src={detailProduct.image} quality={100} height={1300} width={1300} className='globals_image' />
           </div>
 
@@ -67,10 +64,32 @@ export default function Page({ params }) {
           </div>
         </div>
       </div>
+      
       {/* Render hoodie products */}
       {detailProduct.class === 'hoodie' &&(
-      <ProductRelated currentProductClass={currentProductClass} currentProductName={detailProduct.name}/>
+        <ProductRelated currentProductName={detailProduct.name} currentProductClasses={['hoodie']} />
       )}
-    </div>
+
+      {detailProduct.class === 'gown' &&(
+        <ProductRelated currentProductName={detailProduct.name} currentProductClasses={['gown']} />
+      )}
+
+      {detailProduct.class === 'brida_dress' &&(
+        <ProductRelated currentProductName={detailProduct.name} currentProductClasses={['brida_dress']} />
+      )}
+
+      {detailProduct.class === 'lady_joggers' &&(
+        <ProductRelated currentProductName={detailProduct.name} currentProductClasses={['lady_joggers']} />
+      )}
+
+      {detailProduct.class === 'men_joggers' &&(
+        <ProductRelated currentProductName={detailProduct.name} currentProductClasses={['men_joggers']} />
+      )}
+      
+      {detailProduct.class === 'complete_men' &&(
+        <ProductRelated currentProductName={detailProduct.name} currentProductClasses={['complete_men']} />
+      )}
+      </div>
+      
   )
 }

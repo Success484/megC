@@ -12,7 +12,7 @@ export default function Display() {
             <div className={`hover:bg-pink-200 ease-in-out duration-500 rounded-md bg-gray-200 relative`}>
                 <div className={`flex justify-center items-center`}>
                 <Link href={`details/${file.name.split(' ').join('').toLocaleLowerCase()}`}>
-                <Image src={file.image} height={300} width={300} quality={100} className={`p-5 ${index == 8 || index == 9 || index == 10 || index == 11 ? style.larger_image:''} ${style.display_image}`} alt='' />
+                <Image src={file.image} height={300} width={300} quality={100} className={`p-5 ${index == 12 || index == 13 || index == 14 || index == 15 ? style.larger_image:''} ${style.display_image}`} alt='' />
                 </Link>
                 </div>
                 <div className='text-[14px]'>
