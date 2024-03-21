@@ -64,8 +64,6 @@ export default function Page({ params }) {
           </div>
         </div>
       </div>
-      
-      {/* Render hoodie products */}
       {detailProduct.class && (
   <ProductRelated
     currentProductName={detailProduct.name}
