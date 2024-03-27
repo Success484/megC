@@ -13,15 +13,15 @@ export default function ProductRelated({ currentProductName, currentProductClass
       <div className='md:px-28 px-4 relative top-8'>
         <TitleRelated />
       </div>
-     
+
       <div className='flex items-center pb-20 py-[50px] md:px-28 px-4'>
-        <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mx-2 gap-5'>
+        <div className='grid grid-cols-3 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mx-2 gap-5'>
           {relatedProducts.map((product, index) => (
             <section key={index}>
               <div className={`hover:bg-pink-200 ease-in-out duration-500 rounded-md bg-gray-200 relative`}>
                 <div className={`flex justify-center items-center`}>
                   <Link href={`${product.name.split(' ').join('').toLocaleLowerCase()}`}>
-                    <Image src={product.image} height={1300} width={1300} quality={100} alt='' className='globals_images'/>
+                    <Image src={product.image} height={1300} width={1300} quality={100} alt='' className='globals_images' />
                   </Link>
                 </div>
                 <div className='text-[14px]'>

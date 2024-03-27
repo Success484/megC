@@ -1,31 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-.head{
+
+.head {
     font-family: 'Poppins', sans-serif;
 }
 
-.image{
+.image {
     width: 100%;
     height: 450px;
-    
+
 }
 
 .active-link {
     border-bottom: 2px solid rgb(65, 201, 65);
     color: rgb(42, 171, 42);
-  }
+}
 
-.border{
+.border {
     border: 40px solid white;
     border-radius: 100%;
 }
 
 
-.display_image{
+.display_image {
     height: 270px;
     width: 250px;
 }
 
-.larger_image{
+/* .cate_background{
+    background-color: rgb(229, 226, 226);  
+}
+
+.cate_image{
+    height: 270px;
+    width: 250px;
+} */
+
+.larger_image {
     width: 900px;
     height: 500px;
 }
@@ -46,3 +56,57 @@
     width: 200px;
     object-fit: contain;
 }
+
+
+
+
+/* category hover effect */
+
+.container {
+    display: flex;
+    margin: 15px;
+    height: 200px;
+    padding: 10px;
+}
+
+.imageContainer {
+    position: relative;
+
+
+}
+
+.hoverImage {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.textOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 230px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0.3;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+
+}
+
+.imageContainer:hover .textOverlay {
+    opacity: 1;
+    /* Show text on hover */
+
+}
+
+.textOverlay p {
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+}
+
+
+/* end of category hover effect */

@@ -1,7 +1,7 @@
 'use client'
-import { file } from '@/app/File'
-import ProductRelated from '@/app/ProductRelated'
-import StarsRate from '@/app/Star'
+import { file } from '@/app/components/File'
+import ProductRelated from '@/app/components/ProductRelated'
+import StarsRate from '@/app/components/Star'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -65,12 +65,12 @@ export default function Page({ params }) {
         </div>
       </div>
       {detailProduct.class && (
-  <ProductRelated
-    currentProductName={detailProduct.name}
-    currentProductClasses={[detailProduct.class]}
-  />
-)}
-      </div>
-      
+        <ProductRelated
+          currentProductName={detailProduct.name}
+          currentProductClasses={[detailProduct.class]}
+        />
+      )}
+    </div>
+
   )
 }

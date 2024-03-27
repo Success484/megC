@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import React from 'react'
-import style from './style/style.module.css'
+import style from '../style/style.module.css'
 import { motion } from 'framer-motion';
 
 export default function Header() {

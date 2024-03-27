@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './Header'
-import NewArrival from './Arrival'
+import Header from './components/Header'
+import NewArrival from './components/Arrival'
 
 export default function page() {
   return (
