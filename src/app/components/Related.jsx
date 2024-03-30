@@ -9,11 +9,7 @@ export default function Related({ currentProductName, currentProductClasses }) {
   const relatedProducts = file.filter(product => currentProductClasses.includes(product.class) && product.name !== currentProductName);
 
   return (
-    <div>
-      <div className='md:px-28 px-4 relative top-8'>
-        
-      </div>
-
+    <div className='flex justify-center items-center'>
       <div className='flex items-center pb-20 py-[50px] md:px-28 px-4 '>
         <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mx-2 gap-5'>
           {relatedProducts.map((product, index) => (
@@ -21,7 +17,7 @@ export default function Related({ currentProductName, currentProductClasses }) {
               <div className={`hover:bg-pink-200 ease-in-out duration-500 rounded-md bg-gray-200 relative`}>
                 <div className={`flex justify-center items-center`}>
                   <a href={`/details/${product.name.split(' ').join('').toLocaleLowerCase()}`}>
-                    <Image src={product.image} height={1300} width={1300} quality={100} alt='' className='globals_images' />
+                    <Image src={product.image} height={1300} width={1300} quality={100} alt='' className='cate_products' />
                   </a>
                 </div>
                 <div className='text-[14px]'>

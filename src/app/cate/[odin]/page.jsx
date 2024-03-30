@@ -7,7 +7,7 @@ export default function Page({ params }) {
 
   return (
     <div>
-      <h2>{detailProduct.name}</h2>
+      <h2 className="text-[20px] text-pretty font-semibold text-gray-600 md:px-28 sm:px-4 px-28 pt-10">{detailProduct.name}</h2>
       {detailProduct.class && (
         <Related
           currentProductName={detailProduct.name}
