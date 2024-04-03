@@ -21,7 +21,7 @@ export default function Navbar() {
     <div className='bg-gray-100  relative h-[90px]'>
       <div className='flex justify-between pr-20 items-center text-center relative top-[-40px]'>
         <Link href="/" className=''>
-          <Image src={'/MEGLOGO.png'} quality={100} height={1300} width={1300} className={`relative right-20 sm:right-10 ${style.logo}`} alt="Logo" />
+          <Image src={'/MEGLOGO.png'} loading='lazy' quality={100} height={1300} width={1300} className={`relative right-20 sm:right-10 ${style.logo}`} alt="Logo" />
         </Link>
 
         <div className='hidden md:block sm:block'>

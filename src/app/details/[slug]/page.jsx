@@ -1,13 +1,23 @@
 'use client'
-import { file } from '@/app/components/File'
 import ProductRelated from '@/app/components/ProductRelated'
 import StarsRate from '@/app/components/Star'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import axios from 'axios'
+import { useEffect, useState } from 'react'
 
 export default function Page({ params }) {
-  const detailProduct = file.find(detail => detail.name.split(' ').join('').toLocaleLowerCase() === params.slug);
+  const [data, setData] = useState(null)
+    useEffect(()=> {
+        const FetchApi = async () => {
+            const response = await axios.get('https://meggieapi.onrender.com/clothing/')
+            setData(response.data)
+        }
+        FetchApi()
+    }, [])
+  const detailProduct = data ? (data.find(detail => detail.name.split(' ').join('').toLocaleLowerCase() === params.slug)
+  ):(<p>loading</p>)
 
   const openWhatsApp = () => {
     const phoneNumber = '+2347081887562';
@@ -32,7 +42,7 @@ export default function Page({ params }) {
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 justify-center md:px-28 px-10 bg-white  space-x-4'>
           <div className='bg-gray-100 flex justify-center items-center rounded-md'>
-            <Image src={detailProduct.image} quality={100} height={1300} width={1300} className='globals_image' />
+            <Image src={detailProduct.image} loading='lazy' quality={100} height={1300} width={1300} alt={detailProduct.name} className='globals_image' />
           </div>
 
           <div>
@@ -42,8 +52,8 @@ export default function Page({ params }) {
             </div>
             <div className='flex space-x-3'>
               <h2 className='font-bold text-gray-700 text-[17px]'>&#8358;{detailProduct.price} </h2>
-              {detailProduct.preAmount && (
-                <span className='text-gray-500 text-[17px] line-through'>&#8358;{detailProduct.preAmount}</span>
+              {detailProduct.previous_amount && (
+                <span className='text-gray-500 text-[17px] line-through'>&#8358;{detailProduct.previous_amount}</span>
               )}
             </div>
 
@@ -64,10 +74,10 @@ export default function Page({ params }) {
           </div>
         </div>
       </div>
-      {detailProduct.class && (
+      {detailProduct.clothing_class && (
         <ProductRelated
           currentProductName={detailProduct.name}
-          currentProductClasses={[detailProduct.class]}
+          currentProductClasses={[detailProduct.clothing_class]}
         />
       )}
     </div>

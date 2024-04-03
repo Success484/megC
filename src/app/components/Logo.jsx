@@ -9,7 +9,7 @@ export default function Logo() {
         <div className='relative md:left-10 left-16'>
           <StarsRate />
         </div>
-        <Image src={'/MEGLOGO.png'} quality={100} height={300} width={300} alt='Logo' className='relative bottom-0' />
+        <Image src={'/MEGLOGO.png'} loading='lazy' quality={100} height={300} width={300} alt='Logo' className='relative bottom-0' />
         <div className='relative md:right-10 right-16'>
           <StarsRate />
         </div>
