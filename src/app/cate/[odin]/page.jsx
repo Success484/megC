@@ -7,9 +7,20 @@ export default function Page({ params }) {
   const [data, setData] = useState(null)
   useEffect(() => {
     const FetchApi = async () => {
-      const response = await axios.get('https://meggieapi.onrender.com/categories/')
-      setData(response.data)
-    }
+      const token = '5b82083b8d3eb5322b1d682474ba15e888b65625';
+      const config = {
+          headers: {
+              'Authorization': `Token ${token}`
+          }
+      };
+  
+      try {
+          const response = await axios.get('https://meggieapi.onrender.com/cateories/', config);
+          setData(response.data);
+      } catch (error) {
+          console.error('Error fetching data:', error);
+      }
+  }
     FetchApi()
   }, [])
   const detailProduct = data ? (data.find(detail => detail.name.split(' ').join('').toLowerCase() === params.odin)
